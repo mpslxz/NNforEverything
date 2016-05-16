@@ -1,5 +1,10 @@
 cifarBatchNumb = 1
-nbOfSamplesFromBatch = 5000
+nbOfSamplesFromBatch = 500
 nbOfKernels = 100
 kernelSize = 3
 imageSize = 32
+nbOfEpochs = 500
+batchSize = 512
+mlpInputSizeOnCifar10 = imageSize*imageSize + kernelSize*kernelSize
+mlpOutputSizeOnCifar10 = imageSize*imageSize
+numberOfNeuronsPerLayer = [1024,512,256,128]
