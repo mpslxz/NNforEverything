@@ -7,4 +7,4 @@ nbOfEpochs = 500
 batchSize = 512
 mlpInputSizeOnCifar10 = imageSize*imageSize + kernelSize*kernelSize
 mlpOutputSizeOnCifar10 = imageSize*imageSize
-numberOfNeuronsPerLayer = [1024,512,256,128]
+numberOfNeuronsPerLayer = [1024*9]#, 1024*8, 1024*7, 1024*6, 1024*5, 1024*4, 1024*3, 1024*2 ]
