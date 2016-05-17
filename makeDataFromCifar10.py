@@ -13,7 +13,7 @@ def makeData():
     for i in range(0, config.nbOfSamplesFromBatch):
         for j in range(0, config.nbOfKernels):
             kernel = kernels[j, :, :]
-            image = data[i, :, :]/255
+            image = data[i, :, :]/(255*1.0)
             res = convolve(image, kernel, mode='constant', cval=0.0)
             samples[count, :] = np.hstack((np.reshape(image,(1, config.imageSize*config.imageSize)), np.reshape(kernel,(1,config.kernelSize*config.kernelSize))))
             targets[count, :] = np.reshape(res, (1, res.shape[0]*res.shape[1]))
